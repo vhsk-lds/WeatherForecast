@@ -95,7 +95,7 @@ const Button: React.FC = () => {
       {loading && <p>Loading weather data...</p>}
 
       {error && <p style={{ color: 'red' }}>{error}</p>}
-
+ 
       {weatherData && (
         <div className={styles.container}>
         <header className={styles.header}>

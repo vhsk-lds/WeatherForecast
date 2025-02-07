@@ -1,0 +1,5 @@
+export const getDayName = (index: number) => {
+    const today = new Date();
+    const day = new Date(today.setDate(today.getDate() + index));
+    return day.toLocaleDateString('en-US', { weekday: 'long' });
+  };
